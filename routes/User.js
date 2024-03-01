@@ -15,12 +15,12 @@ router.post("/", async(req, res) => {
 
   let email = await User.findOne({email: req.body.email})
   if (email) {
-    return res.send("Email already exists")
+    return res.send("exist")
   }
 
   let username = await User.findOne({username: req.body.username})
   if (username) {
-    return res.send("Username already Exit")
+    return res.send("exist")
   }
 
   try{
