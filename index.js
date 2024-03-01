@@ -15,7 +15,7 @@ const user = require("./routes/User")
 const login = require("./routes/login")
 
 app.use(cors({
-  origin: "http://localhost:5173",
+  origin: "https://react-project001.vercel.app",
   allowedHeaders: ["Content-Type", "Authorization", "x-auth-token"],
   method: ["GET", "POST", "PUT", "PATCH", "DELETE"]
 }))
